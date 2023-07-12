@@ -1,9 +1,14 @@
-import Image from 'next/image';
+import FilterablePosts from '@/components/filterablePosts';
+import { getAllPosts } from '@/service/posts';
+import extractCategories from '@/utils/extractCategories';
 
-const PostListPage = () => {
+export default async function PostsPage() {
+  const posts = await getAllPosts();
+  const categories = extractCategories(posts);
+
   return (
-    <div>포스트 페이지</div>
+    <FilterablePosts posts={posts} categories={categories} />
   );
 };
 
-export default PostListPage;
+
