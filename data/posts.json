@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1",
+    "title": "포스트 제목1",
+    "summary": "요약",
+    "category": ["임시 태그"],
+    "date": "2023-07-12",
+    "path": "unnamed",
+    "featured": true
+  },
+  {
+    "id": "2",
+    "title": "포스트 제목2",
+    "summary": "요약",
+    "category": ["임시 태그"],
+    "date": "2023-07-12",
+    "path": "unnamed",
+    "featured": true
+  },
+  {
+    "id": "3",
+    "title": "포스트 제목3",
+    "summary": "요약333",
+    "category": ["임시 태그333"],
+    "date": "2023-07-12",
+    "path": "unnamed",
+    "featured": true
+  }
+]
