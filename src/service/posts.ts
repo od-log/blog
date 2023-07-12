@@ -4,8 +4,8 @@ import { readFile } from 'fs/promises';
 export interface Post {
   id: string;
   title: string;
-  summary: string;
-  category: string[];
+  description: string;
+  category: string;
   date: string;
   path: string;
   featured: boolean;
