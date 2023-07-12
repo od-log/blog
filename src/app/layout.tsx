@@ -3,6 +3,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
 import { Open_Sans } from 'next/font/google';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const sans = Open_Sans({ subsets: ['latin'] });
 
@@ -17,22 +19,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={sans.className}>
-        <header className='flex justify-between items-center mx-4 h-16'>
-          <h1 className='text-4xl'>my-log</h1>
-          <nav className='flex gap-4 text-xl'>
-            <Link href='/'>HOME</Link>
-            <Link href='/'>ABOUT</Link>
-            <Link href='/'>POST</Link>
-            <Link href='/'>CONTACT</Link>
-          </nav>
-        </header>
-        {children}
+    <html lang="en" className={sans.className}>
+      <body className='flex flex-col w-full max-w-screen-2xl mx-auto'>
+        <Header/>
+        <main className='grow'>{children}</main>
+        <Footer/>
       </body>
-      <footer>
-        od made
-      </footer>
     </html>
   )
 }
