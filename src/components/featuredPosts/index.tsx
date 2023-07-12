@@ -5,9 +5,9 @@ import PostsGrid from '../postsGrid';
 export default async function FeaturedPosts() {
   const posts = await getFeaturedPosts();
   return (
-    <>
-      <h2 className='text-2xl text-bold'>featured Posts</h2>
+    <section className='my-4'>
+      <h2 className='text-2xl font-bold'>featured Posts</h2>
       <PostsGrid posts={posts} />
-    </>
+    </section>
   )
 }
