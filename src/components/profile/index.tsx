@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function Profile() {
   return (
-    <section className="flex justify-center items-center">
+    <section className="flex flex-col justify-center items-center">
       <Image
         className='rounded-full mx-auto'
         src={profileImage}
