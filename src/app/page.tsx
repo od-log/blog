@@ -1,11 +1,15 @@
 import Image from 'next/image';
-import PostListPage from './posts/page'
+import Profile from '@/components/profile';
+import FeaturedPosts from '@/components/featuredPosts';
+import CarouselPosts from '@/components/carouselPosts';
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <PostListPage/>
-    </main>
+    <section>
+      <Profile/>
+      <FeaturedPosts />
+      <CarouselPosts/>
+    </section>
   )
 }
 
