@@ -6,7 +6,7 @@ import React from 'react'
 type Props = { post: Post; }
 export default function PostCard({post : {id, title, description, date, path, category}}: Props) {
   return (
-    <Link href={`/posts/${id}`}>
+    <Link href={`/posts/${path}`}>
       <article className='rounded-md overflow-hidden shadow-md hover:shadow-2xl'>
         <Image
           className='w-full'
