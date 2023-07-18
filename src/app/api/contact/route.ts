@@ -8,9 +8,7 @@ const bodySchema = yup.object().shape({
 });
 
 export async function POST(req: Request) {
-  console.log(req);
   const body = await req.json();
-  console.log(body);
   if (!bodySchema.isValidSync(body)) {
     return new Response(JSON.stringify({ message: "메일 전송 실패" }), { status: 400 });
   }
