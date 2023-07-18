@@ -1,5 +1,11 @@
 import Profile from "@/components/profile";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "About Me",
+  description: "프론트엔드 개발자 오디 소개",
+};
 
 export default function AboutPage() {
   return (
