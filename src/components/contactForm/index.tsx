@@ -1,3 +1,4 @@
+"use client";
 import React, { ChangeEvent, FormEvent, MouseEvent, useState } from "react";
 import Toast, { ToastType } from "../toast";
 import { sendContactEmail } from "@/service/contact";
