@@ -12,7 +12,7 @@ export default function PostContent({ postData }: Props) {
   return (
     <article className="rounded-2xl overflow-hidden m-4">
       <Image
-        className="w-full h-1/6 max-h-[500px]"
+        className="w-full h-1/6 max-h-[350px]"
         src={`/images/${path}.jpg`}
         alt={title}
         width={760}
@@ -21,7 +21,7 @@ export default function PostContent({ postData }: Props) {
       <section className="p-4">
         <p className="flex items-center justify-end font-semibold ml-2">{date.toString()}</p>
         <h1 className="text-4xl font-bold">{title}</h1>
-        <p className="text-xl font-bold">{description}</p>
+        <p className="text-xl font-bold my-4">{description}</p>
         <MarkDownViewer content={content}></MarkDownViewer>
       </section>
     </article>
