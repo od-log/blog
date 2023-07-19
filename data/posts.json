@@ -1,38 +1,22 @@
 [
   {
     "id": "1",
-    "title": "포스트 제목1",
-    "description": "요약",
-    "category": "algorithm",
-    "date": "2023-07-12",
-    "path": "unnamed",
+    "title": "큐",
+    "description": "큐에 대해 알아보자",
+    "category": "dev-log",
+    "tag": ["algorithm", "study"],
+    "date": "2023-07-18",
+    "path": "fifo",
     "featured": true
   },
   {
     "id": "2",
-    "title": "포스트 제목2",
-    "description": "요약",
-    "category": "frontend",
-    "date": "2023-07-12",
-    "path": "unnamed",
-    "featured": true
-  },
-  {
-    "id": "3",
-    "title": "포스트 제목3",
-    "description": "요약333",
-    "category": "algorithm",
-    "date": "2023-07-12",
-    "path": "unnamed",
-    "featured": true
-  },
-  {
-    "id": "4",
-    "title": "포스트 제목4",
-    "description": "요약333",
-    "category": "frontend",
-    "date": "2023-07-12",
-    "path": "unnamed",
+    "title": "블로그 개설",
+    "description": "블로그를 만들었습니다.",
+    "category": "day-log",
+    "tag": [""],
+    "date": "2023-07-18",
+    "path": "my-log",
     "featured": true
   }
 ]
