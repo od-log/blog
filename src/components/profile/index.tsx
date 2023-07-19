@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profileImage from "../../../public/images/profile.jpg";
+import profileImage from "../../../public/images/profile.png";
 import React from "react";
 import Link from "next/link";
 
