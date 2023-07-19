@@ -1,5 +1,5 @@
 import React, { ChangeEvent, FormEvent, MouseEvent, useState } from "react";
-import Toast, { ToastType } from "../Toast";
+import Toast, { ToastType } from "../toast";
 import { sendContactEmail } from "@/service/contact";
 
 const inputStyle = "border-2 rounded-xl border-solid border-slate-300 p-2";
@@ -57,7 +57,7 @@ export default function ContactForm() {
           placeholder="보내는 사람 이메일 주소"
           onChange={onChange}
         />
-        <label htmlFor="subject">이메일 제목</label>
+        <label htmlFor="subject">제목</label>
         <input
           className={inputStyle}
           id="subject"
@@ -67,7 +67,7 @@ export default function ContactForm() {
           value={form.subject}
           onChange={onChange}
         />
-        <label htmlFor="message">내용</label>
+        <label htmlFor="message">메시지</label>
         <textarea
           className={inputStyle}
           name="message"
